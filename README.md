@@ -15,3 +15,6 @@ npm start
 - `POST /login` — get a JWT for a username
 - `GET /tasks` — list your tasks (auth required)
 - `POST /tasks` — create a task (auth required)
+- `DELETE /tasks/:id` — delete your own task (auth required)
+
+Auth is enforced by `middleware/auth.js`, shared across all protected routes.
